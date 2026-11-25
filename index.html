@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Żar — kawiarnia i palarnia</title>
+  <meta name="description" content="Żar — przytulna kawiarnia z własną palarnią. Specialty coffee, domowe wypieki i ciepłe wieczory.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAWIGACJA ===== -->
+  <header class="nav" id="nav">
+    <div class="wrap">
+      <a href="#" class="logo"><span></span>Żar</a>
+
+      <nav class="links">
+        <a href="#o-nas">O nas</a>
+        <a href="#menu">Menu</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#opinie">Opinie</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <a href="#kontakt" class="btn btn-primary">Zarezerwuj stolik</a>
+
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg" role="img" aria-label="Espresso spływające do szklanki"></div>
+
+    <div class="wrap">
+      <span class="eyebrow">Kawiarnia &amp; palarnia</span>
+      <h1>Kawa, która <em>rozgrzewa</em> wieczory</h1>
+      <p>Ziarna palone na miejscu, domowe wypieki i ciepłe światło. Wpadnij na espresso — zostań na całą rozmowę.</p>
+
+      <div class="actions">
+        <a href="#menu" class="btn btn-primary">Zobacz menu</a>
+        <a href="#kontakt" class="btn btn-ghost">Jak do nas trafić</a>
+      </div>
+
+      <div class="hero-info">
+        <div><b>7:30 – 21:00</b>codziennie</div>
+        <div><b>12 kaw</b>z 8 krajów</div>
+        <div><b id="hero-rating">— ★</b>średnia ocen gości</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== O NAS ===== -->
+  <section id="o-nas">
+    <div class="wrap about">
+
+      <div class="about-img reveal">
+        <img src="https://images.unsplash.com/photo-1534418132691-4fd99a15a63c?w=1000&q=80&auto=format&fit=crop"
+             alt="Dłonie trzymające filiżankę cappuccino" loading="lazy">
+        <div class="badge"><b>od 2019</b>palimy własną kawę</div>
+      </div>
+
+      <div class="about-text reveal">
+        <span class="eyebrow">O nas</span>
+        <div class="head">
+          <h2>Małe miejsce z wielkim zapachem kawy</h2>
+        </div>
+        <p>Żar zaczął się od jednego piecyka do palenia kawy i miłości do długich rozmów. Dziś to przytulna kawiarnia, w której każdą porcję ziaren palimy sami — w małych partiach, żeby zawsze była świeża.</p>
+        <p>Wieczorami przygaszamy światło, włączamy spokojną muzykę i pieczemy cynamonowe bułeczki. Przyjdź sam, z książką albo z przyjaciółmi.</p>
+
+        <div class="features">
+          <div class="feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2c3 3 4 6 4 9a4 4 0 0 1-8 0c0-3 1-6 4-9z"/>
+              <path d="M12 22v-7"/>
+            </svg>
+            <h3>Własna palarnia</h3>
+            <p>Świeże ziarno co tydzień</p>
+          </div>
+
+          <div class="feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 11h16v2a8 8 0 0 1-16 0z"/>
+              <path d="M8 3v4M12 3v4M16 3v4"/>
+            </svg>
+            <h3>Domowe wypieki</h3>
+            <p>Pieczone każdego ranka</p>
+          </div>
+
+          <div class="feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.5 10 17 19 7"/>
+            </svg>
+            <h3>Mleka roślinne</h3>
+            <p>Owsiane, sojowe, kokosowe</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section id="menu" class="menu-sec">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Menu</span>
+        <h2>Co dziś parzymy</h2>
+        <p>Każdą kawę możesz zamówić z mlekiem roślinnym bez dopłaty.</p>
+      </div>
+
+      <div class="tabs reveal" role="tablist">
+        <button class="tab active" data-tab="kawa">Kawa</button>
+        <button class="tab" data-tab="alternatywy">Alternatywy</button>
+        <button class="tab" data-tab="slodkie">Na słodko</button>
+      </div>
+
+      <div class="menu-grid reveal">
+
+        <div class="menu-list active" data-list="kawa">
+          <div class="item">
+            <div>
+              <h4>Espresso</h4>
+              <small>Nasza mieszanka „Żar”, nuty czekolady i orzecha</small>
+            </div>
+            <span class="dots"></span>
+            <span class="price">9 zł</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h4>Flat white</h4>
+              <small>Podwójne espresso, aksamitne mleko</small>
+            </div>
+            <span class="dots"></span>
+            <span class="price">15 zł</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h4>Cappuccino</h4>
+              <small>Klasyka z gęstą pianką</small>
+            </div>
+            <span class="dots"></span>
+            <span class="price">14 zł</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h4>Latte miodowo-cynamonowe <span class="tag">hit</span></h4>
+              <small>Lokalny miód, cejloński cynamon</small>
+            </div>
+            <span class="dots"></span>
+            <span class="price">17 zł</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h4>Przelew V60</h4>
+              <small>Ziarno sezonowe — zapytaj baristę</small>
+            </div>
+            <span class="dots"></span>
+            <span class="price">18 zł</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h4>Cold brew</h4>
+              <small>Parzony 18 godzin na zimno</small>
+            </div>
+            <span class="dots"></span>
+            <span class="price">16 zł</span>
+          </div>
+        </div>
+
+        <div class="menu-list" data-list="alternatywy">
+          <div class="item">
+            <div>
+              <h4>Matcha latte</h4>
+              <small>Japońska matcha ceremonialna</small>
+            </div>
+            <span class="dots"></span>
+            <span class="price">18 zł</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h4>Gorąca czekolada</h4>
+              <small>Belgijska czekolada 70%</small>
+            </div>
+            <span class="dots"></span>
+            <span class="price">16 zł</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h4>Chai latte <span class="tag">nowość</span></h4>
+              <small>Korzenna herbata z mlekiem</small>
+            </div>
+            <span class="dots"></span>
+            <span class="price">16 zł</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h4>Herbata liściasta</h4>
+              <small>Czarna, zielona lub owocowa — dzbanek</small>
+            </div>
+            <span class="dots"></span>
+            <span class="price">13 zł</span>
+          </div>
+        </div>
+
+        <div class="menu-list" data-list="slodkie">
+          <div class="item">
+            <div>
+              <h4>Croissant maślany</h4>
+              <small>Z masłem i konfiturą</small>
+            </div>
+            <span class="dots"></span>
+            <span class="price">11 zł</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h4>Cynamonka <span class="tag">hit</span></h4>
+              <small>Ciepła, z kremem waniliowym</small>
+            </div>
+            <span class="dots"></span>
+            <span class="price">13 zł</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h4>Sernik baskijski</h4>
+              <small>Przypalony z wierzchu, kremowy w środku</small>
+            </div>
+            <span class="dots"></span>
+            <span class="price">19 zł</span>
+          </div>
+
+          <div class="item">
+            <div>
+              <h4>Brownie z solą morską</h4>
+              <small>Bez glutenu</small>
+            </div>
+            <span class="dots"></span>
+            <span class="price">14 zł</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIA ===== -->
+  <section id="galeria">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Galeria</span>
+        <h2>Zajrzyj do środka</h2>
+      </div>
+
+      <div class="gallery reveal">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1726873800099-53f5496281e0?w=1200&q=80&auto=format&fit=crop" alt="Kawiarnia wieczorem" loading="lazy">
+          <figcaption>Wieczory w Żarze</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80&auto=format&fit=crop" alt="Croissanty" loading="lazy">
+          <figcaption>Poranne wypieki</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1561964191-a356867bbb34?w=800&q=80&auto=format&fit=crop" alt="Latte art" loading="lazy">
+          <figcaption>Latte art</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1585349048087-e7363ae659ad?w=800&q=80&auto=format&fit=crop" alt="Palone ziarna kawy" loading="lazy">
+          <figcaption>Świeżo palone</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1612366747681-e4ca6992b1e9?w=800&q=80&auto=format&fit=crop" alt="Croissanty na talerzu" loading="lazy">
+          <figcaption>Do kawy</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OPINIE ===== -->
+  <section id="opinie" class="menu-sec">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Opinie</span>
+        <h2>Co mówią goście</h2>
+      </div>
+
+      <div class="reviews-top">
+
+        <div class="review-summary reveal">
+          <div class="summary-score" id="avg-score">—</div>
+          <div class="stars" id="avg-stars">★★★★★</div>
+          <div class="summary-count" id="review-count">Ładowanie opinii…</div>
+
+          <div class="bars" id="rating-bars"></div>
+        </div>
+
+        <div class="review-form-card reveal">
+          <h3 class="form-title">Dodaj opinię</h3>
+
+          <form id="review-form" class="review-form" novalidate>
+
+            <fieldset class="star-input">
+              <legend>Twoja ocena</legend>
+              <div class="star-row">
+                <input type="radio" name="rating" id="star5" value="5"><label for="star5" title="5 — świetnie">★</label>
+                <input type="radio" name="rating" id="star4" value="4"><label for="star4" title="4 — bardzo dobrze">★</label>
+                <input type="radio" name="rating" id="star3" value="3"><label for="star3" title="3 — dobrze">★</label>
+                <input type="radio" name="rating" id="star2" value="2"><label for="star2" title="2 — słabo">★</label>
+                <input type="radio" name="rating" id="star1" value="1"><label for="star1" title="1 — źle">★</label>
+              </div>
+            </fieldset>
+
+            <div>
+              <label for="review-name">Imię</label>
+              <input id="review-name" maxlength="60" placeholder="Twoje imię">
+            </div>
+
+            <div>
+              <label for="review-text">Opinia</label>
+              <textarea id="review-text" rows="4" maxlength="500" placeholder="Jak było? (min. 10 znaków)"></textarea>
+            </div>
+
+            <button class="btn btn-primary form-button" type="submit">Opublikuj opinię</button>
+
+            <div class="form-msg" id="review-msg" role="status"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="reviews" id="review-list"></div>
+
+      <div class="more-wrap">
+        <button class="btn btn-ghost" id="more-reviews" hidden>Pokaż więcej opinii</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+  <section id="kontakt">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Kontakt</span>
+        <h2>Wpadnij do nas</h2>
+      </div>
+
+      <div class="visit">
+
+        <div class="visit-side">
+          <div class="visit-card reveal">
+
+            <div class="contact-line">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/>
+                <circle cx="12" cy="10" r="2.5"/>
+              </svg>
+              ul. Przykładowa 12, Kod pocztowy, Miasto
+            </div>
+
+            <div class="contact-line">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/>
+              </svg>
+              +48 600 000 000
+            </div>
+
+            <div class="hours" id="hours">
+              <div data-day="1"><span>Poniedziałek – Piątek</span><span>7:30 – 21:00</span></div>
+              <div data-day="6"><span>Sobota</span><span>9:00 – 22:00</span></div>
+              <div data-day="0"><span>Niedziela</span><span>9:00 – 20:00</span></div>
+            </div>
+            <p class="hint">Rezerwacje: codziennie 10:00 – 20:00, stolik na 2 godziny.</p>
+          </div>
+
+          <div class="visit-photo reveal">
+            <img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=1200&q=80&auto=format&fit=crop" alt="Wnętrze kawiarni" loading="lazy">
+          </div>
+        </div>
+
+        <div class="visit-card booking reveal">
+          <h3 class="form-title">Zarezerwuj stolik</h3>
+          <p class="hint">Wybierz datę i liczbę osób — pokażemy, które stoliki są wolne.</p>
+
+          <form id="reservation-form" novalidate>
+
+            <div>
+              <label for="res-date">Data</label>
+              <input id="res-date" type="date">
+            </div>
+            <div>
+              <label for="res-guests">Liczba osób</label>
+              <select id="res-guests">
+                <option value="1">1 osoba</option>
+                <option value="2" selected>2 osoby</option>
+                <option value="3">3 osoby</option>
+                <option value="4">4 osoby</option>
+                <option value="5">5 osób</option>
+                <option value="6">6 osób</option>
+                <option value="7">7 osób</option>
+                <option value="8">8 osób</option>
+              </select>
+            </div>
+
+            <div class="full">
+              <span class="field-label">Godzina</span>
+              <div class="slots" id="slots">
+                <p class="placeholder">Najpierw wybierz datę.</p>
+              </div>
+            </div>
+
+            <div class="full">
+              <span class="field-label">Stolik</span>
+              <div class="tables" id="tables">
+                <p class="placeholder">Wybierz godzinę, aby zobaczyć stoliki.</p>
+              </div>
+              <div class="legend">
+                <span><i class="dot free"></i>wolny</span>
+                <span><i class="dot taken"></i>zajęty</span>
+                <span><i class="dot small"></i>za mały</span>
+              </div>
+            </div>
+
+            <div>
+              <label for="res-name">Imię</label>
+              <input id="res-name" maxlength="60" placeholder="Twoje imię">
+            </div>
+            <div>
+              <label for="res-phone">Telefon</label>
+              <input id="res-phone" type="tel" maxlength="20" placeholder="+48 ...">
+            </div>
+
+            <button class="btn btn-primary full form-button" type="submit" id="res-submit" disabled>Zarezerwuj</button>
+
+            <div class="form-msg full" id="res-msg" role="status"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STOPKA ===== -->
+  <footer>
+    <div class="wrap">
+      <a href="#" class="logo footer-logo"><span></span>Żar</a>
+      <div>Projekt demonstracyjny · strona: Marko Khrolenko · zdjęcia: Unsplash</div>
+      <div>© <span id="year"></span></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
