@@ -3,7 +3,7 @@
 Landing page przytulnej kawiarni z palarnią: menu w zakładkach, galeria, opinie gości z oceną
 i rezerwacja stolika z planem sali. Responsywna (telefon, tablet, komputer).
 
-**Demo:** https://baron0788.github.io/kawiarnia_beta/
+**Demo:** https://baron0788.github.io/kawiarnia-zar/
 
 ## Funkcje
 
